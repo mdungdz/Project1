@@ -29,6 +29,15 @@ a {
   /* bỏ gạch chân của tất cả thẻ <a> */
 }
 
+.heading-lv2{
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.27; /* 126.316% */
+  letter-spacing: -0.76px;
+}
+
 .btn {
   display: inline-block;
   min-width: 118px;
@@ -285,6 +294,53 @@ a {
 }
 
 .hero .stats strong:nth-child(2){
+  /* chọn phần tử <strong> thứ 2 */
   margin-left: 28px;
 }
 
+/* ------------------popular---------------- */
+
+
+
+.popular{
+  padding: 65px 0;
+  margin-top: 135px;
+}
+
+.popular-top .desc{
+  margin-top: 16px;
+  width: 458px;
+  color: #5F5B53;
+  font-size: 1.8rem;
+  line-height: 1.67; /* 166.667% */
+}
+
+.popular-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* justify-content: space-between 2 khối dãn kịch về 2 phía */
+}
+
+.popular-top .control-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.popular-top .controls{
+  display: flex;
+  gap: 18px;
+}
+
+.popular-top .control-btn:hover{
+  background: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+}
