@@ -451,8 +451,17 @@ a {
   background: #2e2100;
 }
 
-.feedback-item{
+.feedback-list{
   display: flex;
+  overflow: hidden;
+  /*  overflow: hidden ẩn phần thừa đi */
+}
+
+.feedback-item{
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+  /* flex-shrink: 0 ko bị co phần tử */
 }
 
 .feedback-item .avatar{
